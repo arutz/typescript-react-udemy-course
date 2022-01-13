@@ -1,7 +1,7 @@
 import multiply, {multiplyBy2, HelloWorld} from "./multiply";
 
 const a = 5;
-const b = 2;
+const b = 3;
 
 console.log(`${a} * ${b} = ${multiply(a, b)}`);
-console.log(`${b} * 2 = ${multiplyBy2(b)}`); 
+console.log(`${b} * 2 = ${multiplyBy2(b)}`);
