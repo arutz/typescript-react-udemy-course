@@ -1,3 +1,5 @@
+import "./my-index"
+
 // Part 1
 function someFn(myArgument: number | string | boolean) {
   if (typeof myArgument === 'string') {
