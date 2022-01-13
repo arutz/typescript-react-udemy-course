@@ -24,6 +24,7 @@ class Dog implements Animal {
   setGroup(group: string) {
     this.group = group;
   }
+  bark(): void { console.log("bark!")};
 }
 
 interface AnimalConstructor<T> {
@@ -41,3 +42,7 @@ function initializeAnimal<T extends Animal>(
 
 const cat = initializeAnimal(Cat, 'Felix');
 const dog = initializeAnimal(Dog, 'Ava');
+
+console.log(`cat name is ${cat.name}`);
+console.log(`dog name is ${dog.name}`);
+dog.bark();
