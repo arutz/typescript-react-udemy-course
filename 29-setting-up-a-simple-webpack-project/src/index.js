@@ -1,7 +1,6 @@
-export function log(s) {
-    console.log(s);
-}
-class A {
-    greeting = "hello world";
-}
-log(new A().greeting);
+import React from "react";
+import ReactDOM from "react-dom";
+const App = () => {
+    return React.createElement("div", null, "hello world");
+};
+ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
